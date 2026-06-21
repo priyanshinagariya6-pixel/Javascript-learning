@@ -216,9 +216,72 @@
 // console.log(names); // ["Alice", "Alice"] // modified array after splice 
 // console.log(names.concat(["Dave", "Eve"])); // ["Alice", "Alice", "Dave", "Eve"] // new array banata h
 // console.log(names); // ["Alice", "Alice"] // original array is not modified
-    const arr = ["101", "90", "80", "32", "91"];
-    arr.sort();
-    console.log(arr); // ["101", "32", "80", "90", "91"] // comparison on the basis of ASCII value in 101 1 hota h 3 se chota h aur 8 se bada h isliye 101 pehle aata h
-    arr.sort((a, b) => a - b);
-    console.log(arr); // ["32", "80", "90", "91", "101"] // comparison on the basis of numeric valuemerrn 
+    // const arr = ["101", "90", "80", "32", "91"];
+    // arr.sort();
+    // console.log(arr); // ["101", "32", "80", "90", "91"] // comparison on the basis of ASCII value in 101 1 hota h 3 se chota h aur 8 se bada h isliye 101 pehle aata h
+    // arr.sort((a, b) => a - b);
+    // console.log(arr); // ["32", "80", "90", "91", "101"] // comparison on the basis of numeric valuemerrn 
 
+/////////////     O B J E C T S  //////////////////////////
+// object ke andar key value pair hota h, key string hota h aur value kisi bhi type ka ho skta h
+// const obj = {name: "John", age: 30, isStudent: true};
+// console.log(obj.name); // "John"
+// console.log(obj["age"]); // 30
+// obj.name = "Doe";
+// console.log(obj.name); // "Doe"  
+// obj.addhar = "1234-5678-9012";
+// console.log(obj.addhar); // "1234-5678-9012"
+// delete obj.age;
+//user.age = 31; // update the value of age property
+// console.log(obj.age); // 31
+// console.log(obj); // {name: "Doe", isStudent: true, addhar: "1234-5678-9012"} 
+//delete obj.isStudent; // delete the isStudent property
+
+//const user2 = user ;
+//user2.name = "Alice"; // update the value of name property
+//console.log(user.name); // "Alice" // user object is modified because user2 is a reference to the same object in memory
+//console.log(user2.name); // "Alice" // user2 object is modified because user is a reference to the same object in memory
+//console.log(object.keys(user)); // ["name", "age", "isStudent", "addhar"] // returns an array of keys
+//  
+//      console.log(object.values(user)); // ["Alice", 31, true, "1234-5678-9012"] // returns an array of values
+//      console.log(object.entries(user)); // [["name", "Alice"], ["age", 31], ["isStudent", true], ["addhar", "1234-5678-9012"]] // returns an array of key value pairs    
+ // for(let keys in user){
+//     console.log(keys); }// name age isStudent addhar // returns the keys of the object
+// for(let keys in user){
+//     console.log(user[keys]); }// Alice 31 true 1234-5678-9012 // returns the values of the object
+
+//for(let keys in user){
+//     console.log(keys,user.keys); }// name Alice age 31 isStudent true addhar 1234-5678-9012 // returns the keys and values of the object
+//not a good practice to use for in loop to iterate over the object because it will also iterate over the inherited properties of the object, so it is better to use Object.keys() or Object.values() or Object.entries() to iterate over the object
+
+// const user = {name: "John", age: 30, isStudent: true};
+// const name = user.name ;
+// const age = user.age ;
+//console.log(name, age); // "John", 30
+// const {name, age} = user; // object destructuring
+// console.log(name, age); // "John", 30
+// const {name: userName, age: userAge} = user; // object destructuring with alias means name ko userName aur age ko userAge ke naam se destructure karna
+// console.log(userName, userAge); // "John", 30    
+// const arr = [1, 2, 3];
+// const [a, b, c] = arr; // array destructuring
+// console.log(a, b, c); // 1, 2, 3
+// const [x, y] = arr; // array destructuring with less variables than elements in the array
+// console.log(x, y); // 1, 2
+
+// object ke uppar for of loop direct nhi chala skte h kyuki array ke andar index hota h aur for of loop index ko ignore karta h
+//array ke uppar for of loop chalta h kyuki array ke andar index hota h aur for of loop index ko ignore karta h
+// for(let value of arr){
+//     console.log(value); // 1, 2, 3 // returns the values of the array
+// }
+
+//for(let keys of Object.keys(user)){
+//     console.log(keys); // name, age, isStudent // returns the keys of the object}
+ //const temparr = Object.keys(user);
+ //for(let keys of temparr){
+//     console.log(keys); // name, age, isStudent // returns the keys of the object
+// }
+// for(let values of Object.values(user)){
+//     console.log(values);// "John", 30, true // returns the values of the object
+// }
+//for(let value of Object.entries(user)){
+//     console.log(value); // ["name", "John"], ["age", 30], ["isStudent", true] // returns the key value pairs of the object
