@@ -160,8 +160,65 @@
 // console.log(now.getTimezoneOffset()); // time zone offset in minutes
 // console.log(now.getDay()); // day of the week (0-6) 0 is Sunday and 6 is Saturday
 // console.log(now.getMonth()); // month (0-11) 0 is January and 11 is December
-const now = new Date(2026,8,20,8,25,16,125);
+// const now = new Date(2026,8,20,8,25,16,125);
 //year, month, date, hours, minutes, seconds, milliseconds
-console.log(now.toString()); // "Sun Sep 20 2026 08:25:16 GMT+0530 (India Standard Time)"
+// console.log(now); // 2026-09-20T02:55:16.125Z
+// console.log(now.toString()); // "Sun Sep 20 2026 08:25:16 GMT+0530 (India Standard Time)"
 
 // data bala 
+
+
+//// a rr ay  ///////////////////////////////////////////
+// const arr = [1, 2, 3, 4, 5];
+// console.log(arr.length); // 5
+// console.log(arr[0]); // 1    
+// console.log(arr[arr.length - 1]); // 5
+// console.log(arr.push(6)); // 6
+
+// console.log(arr); // [1, 2, 3, 4, 5, 6]
+// console.log(arr.pop()); // 6
+// console.log(arr); // [1, 2, 3, 4, 5]
+// console.log(arr.shift()); // 1
+// console.log(arr); // [2, 3, 4, 5]    
+// console.log(arr.unshift(0)); // 5
+
+// console.log(arr); // [0, 2, 3, 4, 5]
+
+// console.log(arr.indexOf(3)); // 2
+// console.log(arr.includes(3)); // true
+
+
+
+/////////////// spread operator //////////////////////////
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const arr3 = [...arr1, ...arr2];
+// console.log(arr3); // [1, 2, 3, 4, 5, 6]
+// const arr4 = [...arr1];
+// console.log(arr4); // [1, 2, 3] // copy of arr1  
+// const arr5 = [...arr1, 4, 5, 6];
+// console.log(arr5); // [1, 2, 3, 4, 5, 6]
+// const arr6 = [0, ...arr1, 4, 5, 6];
+// console.log(arr6); // [0, 1, 2, 3, 4, 5, 6]
+//const arr7 = [arr1, arr2];
+//console.log(arr7); // [[1, 2, 3], [4, 5, 6]] // nested array
+
+//const names = ["Alice", "Bob", "Charlie", "Alice"];
+//console.log(typeof names.toString()); // "Alice,Bob,Charlie" // string new string banata h
+//console.log(typeof names.join(", ")); // "Alice, Bob, Charlie" // string new string banata h
+//console.log(names.indexOf("Bob")); // 1
+//.log(names.includes("Bob")); // true   
+//console.log(names.lastIndexOf("Alice")); // 3
+// console.log(names.sort()); // ["Alice", "Alice", "Bob", "Charlie"] comparison on the basis of ASCII value
+// console.log(names.reverse()); // ["Charlie", "Bob", "Alice", "Alice"] // reverse the array
+// console.log(names.slice(1, 3)); // ["Bob", "Charlie"] // last index is not included
+// console.log(names.splice(1, 2)); // ["Bob", "Charlie"] // last index is included and it modifies the original array
+// console.log(names); // ["Alice", "Alice"] // modified array after splice 
+// console.log(names.concat(["Dave", "Eve"])); // ["Alice", "Alice", "Dave", "Eve"] // new array banata h
+// console.log(names); // ["Alice", "Alice"] // original array is not modified
+    const arr = ["101", "90", "80", "32", "91"];
+    arr.sort();
+    console.log(arr); // ["101", "32", "80", "90", "91"] // comparison on the basis of ASCII value in 101 1 hota h 3 se chota h aur 8 se bada h isliye 101 pehle aata h
+    arr.sort((a, b) => a - b);
+    console.log(arr); // ["32", "80", "90", "91", "101"] // comparison on the basis of numeric valuemerrn 
+
