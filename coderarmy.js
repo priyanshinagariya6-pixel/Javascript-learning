@@ -285,3 +285,222 @@
 // }
 //for(let value of Object.entries(user)){
 //     console.log(value); // ["name", "John"], ["age", 30], ["isStudent", true] // returns the key value pairs of the object
+
+
+//console.log(a); // undefined
+//var a = 5;
+
+// console.log(b); // Error
+//let b = 5;
+
+//console.log(c); // Error
+//const c = 5;
+
+
+
+//console.log(a);
+// var a = 10;
+
+
+
+
+//var a;        // memory me undefined assign hua
+
+//console.log(a); // undefined
+
+// a = 10;
+
+
+
+
+//console.log(x);
+// let x = 10;
+
+// let x; // memory me hai, lekin inaccessible
+// console.log(x); // Error
+// x = 10;
+
+// console.log(y);
+// const y = 20;
+
+//TDZ (Temporal Dead Zone) woh time period hota
+//  hai jab ek let ya const variable memory me to create ho chuka hota hai,
+//  lekin abhi initialize nahi hua hota. Is period me agar
+//  aap variable ko access karte ho, to ReferenceError aata hai.
+
+// const person = {
+//     name: "Priyanshi",
+//     age: 20,
+
+//     getAge: function () {
+//         return this.age;
+//     }
+// };
+
+// console.log(person.getAge());//20
+// const person = {
+//     name: "Priyanshi",
+//     age: 20,
+
+//     getAge: function () {
+//         return this.age;
+//     }
+// };
+
+// console.log(person.getAge());
+
+
+// function createUser(name, age) {
+//    
+
+// return vs console.log
+
+
+
+// const obj = {
+//     show() {
+//         console.log("Hello");
+//     }
+// };
+
+// console.log(obj.show()); // hello or under\fine kyuki function kuch return nhi kar raha h
+
+
+
+//const obj = {
+    // show() {
+//         return "Hello";
+//     }
+// };
+
+// console.log(obj.show()); ab only hello
+
+//Jab hum ek function ko kisi variable me store karte hain, use Function Expression kehte hain.
+
+// const greet = function () {
+//     console.log("Hello");
+// };
+
+// greet();
+
+
+
+
+/// //////////////// FUNCTION DECLARATION//////////////////////////////////
+
+// function greet() {
+//     console.log("Hello");
+// }
+
+// greet();
+
+
+// Parameters and Arguments in JavaScript
+
+// Bahut students parameter aur argument ko same samajhte hain, lekin dono alag hote hain.
+
+// Parameter → Function definition ke andar likhe variables.
+// Argument → Function call karte waqt pass ki hui values.
+// Example
+// function add(a, b) {
+//     return a + b;
+// }
+
+// add(10, 20);
+
+// Yahan:
+
+// a aur b → Parameters
+// 10 aur 20 → ArgumentsExample 1: Single Parameter
+// function greet(name) {
+//     console.log("Hello " + name);
+// }
+
+// greet("Priyanshi");
+// name → Parameter
+// "Priyanshi" → Argument
+
+// Output:
+
+// Hello Priyanshi
+// Example 2: Multiple Parameters
+// function multiply(x, y) {
+//     return x * y;
+// }
+
+// console.log(multiply(5, 4));
+// x, y → Parameters
+// 5, 4 → Arguments
+
+// Output:
+
+// 20
+// Default Parameters
+// function greet(name = "Guest") {
+//     console.log(name);
+// }
+
+// greet();
+// greet("Priyanshi");
+
+// Output:
+
+// Guest
+// Priyanshi
+
+// Yahan agar argument pass nahi hota to default value use hoti hai.
+
+// Missing Arguments
+// function add(a, b) {
+//     console.log(a);
+//     console.log(b);
+// }
+
+// add(10);
+
+// Output:
+
+// 10
+// undefined
+
+// Kyun?
+
+// a = 10
+// b = undefined
+// Extra Arguments
+// function add(a, b) {
+//     return a + b;
+// }
+
+// console.log(add(10, 20, 30, 40));
+
+// Output:
+
+// 30
+
+// Extra arguments ignore ho jate hain.
+
+// Rest Parameters
+
+// Jab hume nahi pata kitne arguments aayenge.
+
+// function sum(...numbers) {
+//     let total = 0;
+
+//     for (let num of numbers) {
+//         total += num;
+//     }
+
+//     return total;
+// }
+
+// console.log(sum(10, 20, 30, 40));
+
+// Output:
+
+// 100
+
+// ...numbers saare arguments ko array me collect kar leta hai.
+
+// Pass by Value
+
